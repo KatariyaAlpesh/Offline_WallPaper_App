@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CategoryCardView"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        app:cardCornerRadius= "6dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="7dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="1dp"
+            android:foreground="@drawable/category_grid_border">
+
+            <ImageView
+                android:id="@+id/CategoryWallpapers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/category_animals"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/CategoryWallpapersName"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="15dp"
+                android:gravity="start"
+                android:text="Animals"
+                android:textStyle="italic|bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:background="#80000000"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
